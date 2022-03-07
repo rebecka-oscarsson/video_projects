@@ -20,8 +20,7 @@ function Card({id, logo, company, description}) {
             <footer className={styles.footer}><span><img src={CameraIcon} alt="" className={styles.icon} />3 videos</span><span><img src={ClockIcon} alt="" className={styles.icon} />3 mars</span></footer>
             </ul>
         </article>
-    );
-    
+    );  
 }
 
 export default Card;
