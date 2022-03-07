@@ -1,0 +1,32 @@
+.card {
+  box-shadow: 3px 3px 2px 0px;
+  background: #363a42;
+  border-radius: 3px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.card_header {display: flex; color: #B0B3B5; line-height:normal;}
+.labels {
+  display: flex;
+  flex-flow: row wrap;
+  list-style: none;
+  padding-left: 0;
+}
+.image {
+  height: 50px;
+  width: 50px;
+  object-fit: cover;
+  box-shadow: 2px 2px 0px 0px #141517;
+  border-radius: 3px;
+  margin-right: 0.5em;
+}
+.ruler {
+  border: 1px solid #242629;
+  width: 100%;
+}
+.icon {
+  margin-right: 0.5em;
+}
+.footer {width: 100%; display: flex; justify-content: space-between; color: #B0B3B5;}

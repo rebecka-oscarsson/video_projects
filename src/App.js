@@ -1,31 +1,20 @@
 import { useState, useEffect } from "react";
+import "./normalize.css";
 import "./App.css";
-import {
+import {useFetch,
   Header,
   Hero,
   Main,
   ProjectListHeadline,
-  SearchBox,
-  useFetch,
+  SearchBox 
 } from "./index";
 
 function App() {
-  const [searchTerm, setSearchTerm] = useState("video");
+  const [searchTerm, setSearchTerm] = useState("");
   const [searchResults, loading, error] = useFetch(searchTerm);
-  console.log(searchResults.length, "loading", loading, "error", error);
+  console.log(searchResults, "loading: ", loading, "error: ", error);
 
-  // useEffect(() => {
-  //   if (searchTerm.length !== 0)
-  //   {const [searchResults, loading, error] = useFetch(searchTerm)}
-  // }, [searchTerm])
-
-  // let mainSection;
-  // if (loading)
-  // {mainSection = <div>Loading...</div>}
-  // if (error)
-  // {mainSection = <div>An error occured, please try again</div>}
-  // else if (!loading && searchResults.length > 0)
-  // {mainSection = searchResults.map((result) => <Card key={result.id} id={result.id} logo={result.thumbnail} company={result.title} description={result.description} />)}
+  useEffect(() => {setSearchTerm("video")}, [])
 
   return (
     <>

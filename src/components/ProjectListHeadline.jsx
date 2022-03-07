@@ -1,11 +1,10 @@
 import React from 'react';
-import styles from './Label.css'
 
 function ProjectListHeadline(props) {
     return (
-        <div>
-            ProjectListHeadline
-        </div>
+        <h2>
+            All jobs - X results
+        </h2>
     );
 }
 

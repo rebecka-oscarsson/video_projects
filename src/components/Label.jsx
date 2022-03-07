@@ -1,11 +1,11 @@
 import React from 'react';
-import styles from './Label.css'
+import styles from './Label.module.css'
 
-function Label(props) {
+function Label({labelText, index}) {
     return (
-        <div>
-            Label
-        </div>
+        <li key = {index} className={styles.label}>
+        {labelText}
+        </li>
     );
 }
 

@@ -1,11 +1,10 @@
 import React from 'react';
-import styles from './Hero.css'
 
 function Hero(props) {
     return (
-        <div>
-            Hero
-        </div>
+        <h2>
+            Hero Banner
+        </h2>
     );
 }
 

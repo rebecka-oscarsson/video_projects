@@ -1,0 +1,15 @@
+body {
+  font-family: "Roboto", sans-serif;
+  color: #eff3f5;
+  background: #26262e;
+  margin: 30px;
+}
+
+h2 {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 600;
+  text-align: left;
+}
+
